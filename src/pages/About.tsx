@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { skills } from "../data/skills";
-import image from '../assets/webdev.png';
+import image from '../assets/webdev1.png';
 
 const About = () => {
     const [hover, setHover] = useState(false);

@@ -1,4 +1,4 @@
-import image from '../assets/webdev1.png';
+import image from '../assets/webdev.png';
 
 function Home() {
   return (
