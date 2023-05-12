@@ -1,8 +1,12 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import { useClickAway } from "react-use";
 import { motion } from "framer-motion";
 
-export default function Project({ project}: any) {
+interface Props {
+  project: any;
+}
+
+export default function Project({ project }: Props) {
   const [isMouseOver, setIsMouseOver] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
 
@@ -19,9 +23,9 @@ export default function Project({ project}: any) {
 
   return (
     <motion.div
-    style={initialPosition}
-    animate={{ x: 0 }}
-    transition={{ duration: 1 }}
+      style={initialPosition}
+      animate={{ x: 0 }}
+      transition={{ duration: 1 }}
     >
       <div className="text-[24px] text-white flex flex-col justify-start items-center gap-3">
         <span className="font-semibold mb-6 text-3xl">{project.name}</span>
