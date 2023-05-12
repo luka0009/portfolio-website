@@ -53,7 +53,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="content-div text-white py-3 bg-[#1F0A3A] min-h-[92vh]">
+    <div className=" text-white py-3 bg-[#1F0A3A] min-h-[92vh]">
       <h1 className="text-center text-blue-500 text-[44px]">Contact Info</h1>
       <motion.div
         initial={{ opacity: 1 }}
@@ -61,7 +61,7 @@ export default function Contact() {
         transition={{ duration: 0.45 }}
         className="mx-12 ml-14 md:mx-auto h-[350px] w-[40vw] flex flex-col items-center justify-center"
       >
-        <div className="z-1 bg-[#1A0B2E] text-blue-600 relative mx-auto p-24 border-2 border-blue-600 h-[250px] w-[270px] md:w-[350px] lg:w-[470px] flex items-center justify-center">
+        <div className="image z-1 bg-[#1A0B2E] text-blue-600 relative mx-auto p-24 border-2 border-blue-600 h-[250px] w-[270px] md:w-[350px] lg:w-[470px] flex items-center justify-center">
           <div className="absolute top-5">
             <span className="z-99 mt-3 text-2xl text-white">
               {texts[index]}

@@ -7,7 +7,7 @@ function Home() {
       <img
         src={image}
         alt="Picture of the author"
-        className="w-[300px] h-[200px] md:w-[400px] md:h-[280px] lg:w-[500px]"
+        className="image w-[300px] h-[200px] md:w-[400px] md:h-[280px] lg:w-[500px]"
       />
     </div>
     <div className="animate-charcter flex justify-center text-white mt-[-100px] md:mt-[-360px] lg:mt-[-100px] md:text-xl lg:text-2xl whitespace-nowrap">

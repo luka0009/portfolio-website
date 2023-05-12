@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className="bg-[#1F0A3A] pb-8 w-full min-h-screen h-fit text-white p-2">
       <span className="mx-3 mt-2 text-base md:text-xl lg:text-4xl">About Me</span>
-      <div className="flex flex-col">
+      <div className="image flex flex-col">
         <div className="flex items-center justify-center">
           <div className="p-3 text-xs md:text-md lg:text-lg">
             <p>
@@ -29,10 +29,10 @@ const About = () => {
           <img
             src={image}
             alt="Picture of the author"
-            className="hidden md:block md:w-[320px] md:h-[320px] lg:w-[500px] lg:h-[350px]"
+            className="image hidden md:block md:w-[320px] md:h-[320px] lg:w-[500px] lg:h-[350px]"
           />
         </div>
-        <div className="flex flex-col items-center justify-center">
+        <div className="image flex flex-col items-center justify-center">
           <h1 className="mt-6 text-lg md:text-2xl lg:text-4xl mb-5">Skills</h1>
           <div className="mt-5 grid grid-cols-5 md:grid-cols-7 gap-3 md:gap-5 lg:gap-9">
             {skills.map((skill) => (
