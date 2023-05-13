@@ -1,15 +1,22 @@
 import { useState } from "react";
 import { skills } from "../data/skills";
-import image from '../assets/webdev1.png';
+import image from "../assets/webdev1.png";
+import { motion } from 'framer-motion';
 
 const About = () => {
-    const [hover, setHover] = useState(false);
+  const [hover, setHover] = useState(false);
   return (
     <div className="bg-[#1F0A3A] pb-8 w-full min-h-screen h-fit text-white p-2">
-      <span className="mx-3 mt-2 text-base md:text-xl lg:text-4xl">About Me</span>
-      <div className="image-mid flex flex-col">
+      <span className="mx-3 mt-2 text-base md:text-xl lg:text-4xl">
+        About Me
+      </span>
+      <div className="flex flex-col">
         <div className="flex items-center justify-center">
-          <div className="p-3 text-xs md:text-md lg:text-lg">
+          <motion.div 
+          style={{x: -500}}
+          animate={{ x: 0 }}
+          transition={{ duration: 1 }}
+          className="p-3 text-xs md:text-md lg:text-lg">
             <p>
               I am passionate Frontend/Full Stack Developer Web developer with a
               desire to learn and grow in a collaborative team environment. I am
@@ -25,14 +32,21 @@ const About = () => {
               development of client web applications and websites, as well as
               full-stack applications using the MERN stack and NextJS.
             </p>
-          </div>
-          <img
+          </motion.div>
+          <motion.img
+            style={{x: 500}}
+            animate={{ x: 0 }}
+            transition={{ duration: 1 }}
             src={image}
             alt="Picture of the author"
-            className="image-mid hidden md:block md:w-[320px] md:h-[320px] lg:w-[500px] lg:h-[350px]"
+            className="hidden md:block md:w-[320px] md:h-[320px] lg:w-[500px] lg:h-[350px]"
           />
         </div>
-        <div className="image-mid flex flex-col items-center justify-center">
+        <motion.div 
+        style={{y: 500}}
+        animate={{ y: 0 }}
+        transition={{ duration: 1 }}
+        className="flex flex-col items-center justify-center">
           <h1 className="mt-6 text-lg md:text-2xl lg:text-4xl mb-5">Skills</h1>
           <div className="mt-5 grid grid-cols-5 md:grid-cols-7 gap-3 md:gap-5 lg:gap-9">
             {skills.map((skill) => (
@@ -57,10 +71,10 @@ const About = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
-}
+};
 
 export default About;

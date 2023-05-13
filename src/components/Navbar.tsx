@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const Navbar = () => {
     return (
-      <div className="bg-[#1A0B2E] w-full h-fit py-5 px-4 text-white flex justify-between items-center text-sm sm:text-base md:text-lg lg:text-xl">
+      <div className="relative z-99 bg-[#1A0B2E] w-full h-fit py-5 px-4 text-white flex justify-between items-center text-sm sm:text-base md:text-lg lg:text-xl">
         <div className="hidden md:block">
           <Link to='/' className="cursor-pointer">Luka Barbakadze</Link> 
         </div>
