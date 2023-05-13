@@ -27,10 +27,10 @@ export default function Project({ project }: Props) {
       animate={{ x: 0 }}
       transition={{ duration: 1 }}
     >
-      <div className="text-[24px] text-white flex flex-col justify-start items-center gap-3">
+      <div className="text-[24px] text-white flex flex-col justify-start items-center md:gap-3">
         <span className="font-semibold md:mb-6 text-xl md:text-2xl lg:text-3xl">{project.name}</span>
         <div
-          className="relative cursor-pointer scale-90 md:scale-100 flex flex-col justify-start items-center w-[250px] h-[240px]"
+          className="relative cursor-pointer scale-[0.8] my-[-10px] md:mb-1 md:scale-100 flex flex-col justify-start items-center w-[250px] h-[240px]"
           onMouseOver={() => setIsMouseOver(true)}
           onMouseLeave={() => setIsMouseOver(false)}
         >
