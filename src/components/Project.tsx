@@ -28,9 +28,9 @@ export default function Project({ project }: Props) {
       transition={{ duration: 1 }}
     >
       <div className="text-[24px] text-white flex flex-col justify-start items-center gap-3">
-        <span className="font-semibold mb-6 text-3xl">{project.name}</span>
+        <span className="font-semibold md:mb-6 text-xl md:text-2xl lg:text-3xl">{project.name}</span>
         <div
-          className="relative cursor-pointer flex flex-col justify-start items-center w-[250px] h-[240px]"
+          className="relative cursor-pointer scale-90 md:scale-100 flex flex-col justify-start items-center w-[250px] h-[240px]"
           onMouseOver={() => setIsMouseOver(true)}
           onMouseLeave={() => setIsMouseOver(false)}
         >
@@ -86,7 +86,7 @@ export default function Project({ project }: Props) {
           )}
         </div>
         <div className="mt-1 flex flex-col gap-1">
-          <span className="font-semibold">Tech stack: </span>
+          <span className="font-semibold text-lg md:text-xl lg:text-2xl">Tech stack: </span>
           <span className="bg-[#1A0B2E] text-white px-2 py-1 text-xs md:text-lg xl:text-xl">
             {project.stack}
           </span>

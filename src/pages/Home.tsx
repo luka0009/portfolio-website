@@ -7,12 +7,14 @@ function Home() {
       <img
         src={image}
         alt="Picture of the author"
-        className="image w-[300px] h-[200px] md:w-[400px] md:h-[280px] lg:w-[500px]"
+        className="image-long w-[300px] h-[200px] md:w-[400px] md:h-[280px] lg:w-[500px]"
       />
     </div>
-    <div className="animate-charcter flex justify-center text-white mt-[-100px] md:mt-[-360px] lg:mt-[-100px] md:text-xl lg:text-2xl whitespace-nowrap">
-      Hello, I am Luka Barbakadze
-      <br />I am a Web Developer
+    <div className="animate-charcter flex justify-center text-white mt-[-100px] md:mt-[-360px] lg:mt-[-100px] md:text-xl lg:text-[27px] whitespace-nowrap">
+      <div className='flex flex-col gap-2'>
+        <span>Hello, I am Luka Barbakadze</span>
+        <span>I am a Web Developer</span>
+      </div>
     </div>
   </div>
   )
