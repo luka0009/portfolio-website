@@ -46,6 +46,15 @@
   to { opacity: 1; }
 }
 
+.textcolor {
+  background-image: linear-gradient(
+    -225deg,
+    deeppink 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+}
 
 body {
   overflow-x: hidden;

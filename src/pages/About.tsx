@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { skills } from "../data/skills";
 import image from "../assets/webdev1.png";
 import { motion } from 'framer-motion';
 
 const About = () => {
   const [hover, setHover] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    //@ts-expect-error typescript error
+    setTimeout(() => setIsLoading(false), [1200])
+  }, []);
   return (
     <div className="bg-[#1F0A3A] pb-8 w-full min-h-screen h-fit text-white p-2">
       <span className="mx-3 mt-2 text-base md:text-xl lg:text-4xl">
@@ -12,10 +17,25 @@ const About = () => {
       </span>
       <div className="flex flex-col">
         <div className="flex items-center justify-center">
-          <motion.div 
-          style={{x: -500}}
-          animate={{ x: 0 }}
-          transition={{ duration: 1 }}
+          {isLoading ? (
+            <div className="flex flex-col gap-3 w-full mx-3 my-2 lg:mx-0 lg:ml-4 lg:mr-[13rem]"> 
+              <p className="textcolor rounded-xl h-2 min-w-full bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 min-w-full bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 min-w-full bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 min-w-full bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 min-w-full bg-white animate-pulse"></p>
+              <br />
+              <p className="textcolor rounded-xl h-2 min-w-full bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 min-w-full bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 min-w-full bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 min-w-full bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 min-w-full bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 w-[200px] bg-white animate-pulse"></p>
+            </div>
+          ) : (<motion.div 
+          style={{opacity: 0}}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
           className="p-3 text-xs md:text-md lg:text-lg">
             <p>
               I am passionate Frontend/Full Stack Developer Web developer with a
@@ -32,7 +52,7 @@ const About = () => {
               development of client web applications and websites, as well as
               full-stack applications using the MERN stack and NextJS.
             </p>
-          </motion.div>
+          </motion.div>)}
           <motion.img
             style={{x: 500}}
             animate={{ x: 0 }}

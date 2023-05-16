@@ -63,7 +63,7 @@ export default function Contact() {
       >
         <div className="image z-1 bg-[#1A0B2E] text-blue-600 relative mx-auto p-24 border-2 border-blue-600 h-[250px] w-[270px] md:w-[350px] lg:w-[470px] flex items-center justify-center">
           <div className="absolute top-5">
-            <span className="z-99 mt-3 text-2xl text-white">
+            <span className="z-99 mt-3 text-white text-md md:text-lg lg:text-2xl">
               {texts[index]}
             </span>
           </div>
@@ -72,7 +72,7 @@ export default function Contact() {
             <div className="absolute scale-50 md:scale-100 lg:scale-[1.2] bottom-8 mx-auto">
               <button
                 onClick={() => copyToClipboard(contents[index])}
-                className="text-md bg-blue-500 hover:bg-blue-400 text-white py-1 px-3 rounded mt-0"
+                className="text-md bg-blue-500 hover:bg-blue-400 text-white py-1 px-3 scale-[1.8] md:scale-100 rounded mt-0"
               >
                 {isCopied ? "Copied!" : "Copy"}
               </button>
