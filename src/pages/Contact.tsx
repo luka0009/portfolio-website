@@ -1,4 +1,4 @@
-//@ts-nocheck
+//@ts-nocheck 
 import React, { useState } from "react";
 import gmail from "../assets/gmail.png";
 import { motion } from "framer-motion";

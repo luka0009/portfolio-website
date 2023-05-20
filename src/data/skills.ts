@@ -5,6 +5,7 @@ import js from '../assets/skills/js.png';
 import ts from '../assets/skills/ts.png';
 import react from '../assets/skills/react.png';
 import redux from '../assets/skills/redux.png';
+import vue from '../assets/skills/vue.png';
 import tailwind from '../assets/skills/tailwind.png';
 import bootstrap from '../assets/skills/bootstrap.png';
 import npm from '../assets/skills/npm.png';
@@ -56,6 +57,11 @@ export const skills = [
         id: 107,
         image: 'https://files.raycast.com/4dnlt8m2mcb98bzc4zb8pggc4csi',
         name: "Next.js",
+    },
+    {
+        id: 108,
+        image: vue,
+        name: "Vue.js",
     },
     {
         id: 8,
