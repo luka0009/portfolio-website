@@ -35,7 +35,7 @@ const About = () => {
           ) : (<motion.div 
           style={{opacity: 0}}
           animate={{ opacity: 1 }}
-          transition={{ duration: 2 }}
+          transition={{ duration: 1.9 }}
           className="p-3 text-xs md:text-md lg:text-lg">
             <p>
               I am passionate Frontend/Full Stack Developer Web developer with a
