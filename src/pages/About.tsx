@@ -19,18 +19,18 @@ const About = () => {
         <div className="flex items-center justify-center">
           {isLoading ? (
             <div className="flex flex-col gap-3 w-full mx-3 my-2 lg:mx-0 lg:ml-4 lg:mr-[13rem]">
-              <p className="textcolor rounded-xl h-2 max-w-[500px] bg-white animate-pulse"></p>
-              <p className="textcolor rounded-xl h-2 max-w-[500px] bg-white animate-pulse"></p>
-              <p className="textcolor rounded-xl h-2 max-w-[500px] bg-white animate-pulse"></p>
-              <p className="textcolor rounded-xl h-2 max-w-[500px] bg-white animate-pulse"></p>
-              <p className="textcolor rounded-xl h-2 max-w-[500px] bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 max-w-[400px] bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 max-w-[400px] bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 max-w-[400px] bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 max-w-[400px] bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 max-w-[400px] bg-white animate-pulse"></p>
               <br />
-              <p className="textcolor rounded-xl h-2 max-w-[500px] bg-white animate-pulse"></p>
-              <p className="textcolor rounded-xl h-2 max-w-[500px] bg-white animate-pulse"></p>
-              <p className="textcolor rounded-xl h-2 max-w-[500px] bg-white animate-pulse"></p>
-              <p className="textcolor rounded-xl h-2 max-w-[500px] bg-white animate-pulse"></p>
-              <p className="textcolor rounded-xl h-2 max-w-[500px] bg-white animate-pulse"></p>
-              <p className="textcolor rounded-xl h-2 max-w-[500px] bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 max-w-[400px] bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 max-w-[400px] bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 max-w-[400px] bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 max-w-[400px] bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 max-w-[400px] bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 max-w-[400px] bg-white animate-pulse"></p>
             </div>
           ) : (
             <motion.div
