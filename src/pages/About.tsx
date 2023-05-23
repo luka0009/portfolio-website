@@ -1,11 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { skills } from "../data/skills";
 import image from "../assets/webdev1.png";
 import { motion } from "framer-motion";
 
 const About = () => {
   const [hover, setHover] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
 
   return (
     <div className="bg-[#1F0A3A] pb-8 w-full min-h-screen h-fit text-white p-2">
