@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import { skills } from "../data/skills";
 import image from "../assets/webdev1.png";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const About = () => {
   const [hover, setHover] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     //@ts-expect-error typescript error
-    setTimeout(() => setIsLoading(false), [1200])
+    setTimeout(() => setIsLoading(false), [1200]);
   }, []);
   return (
     <div className="bg-[#1F0A3A] pb-8 w-full min-h-screen h-fit text-white p-2">
@@ -18,43 +18,47 @@ const About = () => {
       <div className="flex flex-col">
         <div className="flex items-center justify-center">
           {isLoading ? (
-            <div className="flex flex-col gap-3 w-full mx-3 my-2 lg:mx-0 lg:ml-4 lg:mr-[13rem]"> 
-              <p className="textcolor rounded-xl h-2 min-w-full bg-white animate-pulse"></p>
-              <p className="textcolor rounded-xl h-2 min-w-full bg-white animate-pulse"></p>
-              <p className="textcolor rounded-xl h-2 min-w-full bg-white animate-pulse"></p>
-              <p className="textcolor rounded-xl h-2 min-w-full bg-white animate-pulse"></p>
-              <p className="textcolor rounded-xl h-2 min-w-full bg-white animate-pulse"></p>
+            <div className="flex flex-col gap-3 w-full mx-3 my-2 lg:mx-0 lg:ml-4 lg:mr-[13rem]">
+              <p className="textcolor rounded-xl h-2 max-w-[500px] bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 max-w-[500px] bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 max-w-[500px] bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 max-w-[500px] bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 max-w-[500px] bg-white animate-pulse"></p>
               <br />
-              <p className="textcolor rounded-xl h-2 min-w-full bg-white animate-pulse"></p>
-              <p className="textcolor rounded-xl h-2 min-w-full bg-white animate-pulse"></p>
-              <p className="textcolor rounded-xl h-2 min-w-full bg-white animate-pulse"></p>
-              <p className="textcolor rounded-xl h-2 min-w-full bg-white animate-pulse"></p>
-              <p className="textcolor rounded-xl h-2 min-w-full bg-white animate-pulse"></p>
-              <p className="textcolor rounded-xl h-2 w-[200px] bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 max-w-[500px] bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 max-w-[500px] bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 max-w-[500px] bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 max-w-[500px] bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 max-w-[500px] bg-white animate-pulse"></p>
+              <p className="textcolor rounded-xl h-2 max-w-[500px] bg-white animate-pulse"></p>
             </div>
-          ) : (<motion.div 
-          style={{opacity: 0}}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.9 }}
-          className="p-3 text-xs md:text-md lg:text-lg">
-            <p>
-              I am passionate Frontend/Full Stack Developer Web developer with a
-              desire to learn and grow in a collaborative team environment. I am
-              Skilled in various programming languages and technologies, mostly
-              in Javascript language, especially in react and its ecosystem.
-            </p>
-            <br />
-            <p>
-              As a web developer, I have had the opportunity to develop and
-              architect solutions for web projects using modern JavaScript
-              frameworks while adhering to industry best practices and
-              standards. I have experience in both frontend architecture and
-              development of client web applications and websites, as well as
-              full-stack applications using the MERN stack and NextJS.
-            </p>
-          </motion.div>)}
+          ) : (
+            <motion.div
+              style={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1.9 }}
+              className="p-3 text-xs md:text-md lg:text-lg"
+            >
+              <p>
+                I am passionate Frontend/Full Stack Developer Web developer with
+                a desire to learn and grow in a collaborative team environment.
+                I am Skilled in various programming languages and technologies,
+                mostly in Javascript language, especially in react and its
+                ecosystem.
+              </p>
+              <br />
+              <p>
+                As a web developer, I have had the opportunity to develop and
+                architect solutions for web projects using modern JavaScript
+                frameworks while adhering to industry best practices and
+                standards. I have experience in both frontend architecture and
+                development of client web applications and websites, as well as
+                full-stack applications using the MERN stack and NextJS.
+              </p>
+            </motion.div>
+          )}
           <motion.img
-            style={{x: 500}}
+            style={{ x: 500 }}
             animate={{ x: 0 }}
             transition={{ duration: 1 }}
             src={image}
@@ -62,11 +66,12 @@ const About = () => {
             className="hidden md:block md:w-[320px] md:h-[320px] lg:w-[500px] lg:h-[350px]"
           />
         </div>
-        <motion.div 
-        style={{y: 500}}
-        animate={{ y: 0 }}
-        transition={{ duration: 1 }}
-        className="flex flex-col items-center justify-center">
+        <motion.div
+          style={{ y: 500 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 1 }}
+          className="flex flex-col items-center justify-center"
+        >
           <h1 className="mt-6 text-lg md:text-2xl lg:text-4xl mb-5">Skills</h1>
           <div className="mt-5 grid grid-cols-5 md:grid-cols-7 gap-3 md:gap-5 lg:gap-9">
             {skills.map((skill) => (
