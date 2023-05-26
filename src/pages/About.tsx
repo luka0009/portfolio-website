@@ -7,7 +7,9 @@ const About = () => {
   const [hover, setHover] = useState(false);
 
   return (
-    <div className="bg-[#1F0A3A] pb-8 w-full min-h-screen h-fit text-white p-2">
+    <div className="bg-[#1F0A3A]
+    bg-gradient-to-r from-[#1F0A3A] via-black to-[#1F0A3A] 
+    pb-8 w-full min-h-screen h-fit text-white p-2">
       <span className="mx-3 mt-2 text-base md:text-xl lg:text-4xl">
         About Me
       </span>
@@ -20,7 +22,7 @@ const About = () => {
               className="p-3 text-xs md:text-md lg:text-lg"
             >
               <p>
-                I am passionate Frontend/Full Stack Developer Web developer with
+                I am passionate Frontend/Full Stack Web developer with
                 a desire to learn and grow in a collaborative team environment.
                 I am Skilled in various programming languages and technologies,
                 mostly in Javascript language, especially in react and its

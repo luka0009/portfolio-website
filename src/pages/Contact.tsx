@@ -53,7 +53,10 @@ export default function Contact() {
   };
 
   return (
-    <div className=" text-white py-3 bg-[#1F0A3A] min-h-[92vh]">
+    <div className=" text-white py-3
+     bg-[#1F0A3A] 
+     bg-gradient-to-r from-[#1F0A3A] via-black to-[#1F0A3A]
+     min-h-[92vh]">
       <h1 className="text-center text-blue-500 text-[44px]">Contact Info</h1>
       <motion.div
         initial={{ opacity: 1 }}

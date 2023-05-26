@@ -3,7 +3,10 @@ import Project from '../components/Project';
 
 export default function Projects() {
   return (
-    <div className='mb-[-200px] text-center bg-[#1F0A3A] p-10'>
+    <div className='mb-[-200px] text-center
+     bg-[#1F0A3A]
+     bg-gradient-to-r from-[#1F0A3A] via-black to-[#1F0A3A]
+      p-10'>
      <div className='mt-[-40px] md:mt-[-40px] lg:mt-[-20px] header-container'>
       <span className='text-[27px] md:text-[48px] text-white'> 
       <br />

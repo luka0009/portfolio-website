@@ -2,7 +2,9 @@ import image from '../assets/webdev.png';
 
 function Home() {
   return (
-    <div className="bg-[#1F0A3A] w-full min-h-screen grid grid-cols-1 sm:gap-12 md:flex md:items-center md:justify-between lg:justify-center lg:gap-24 px-5">
+    <div className="bg-[#1F0A3A] 
+    bg-gradient-to-bl from-[#1F0A3A] via-slate-900 to-purple-900
+    w-full min-h-screen grid grid-cols-1 sm:gap-12 md:flex md:items-center md:justify-between lg:justify-center lg:gap-24 px-5">
     <div className="flex justify-center items-center w-full md:w-fit mt-[-70px] md:mt-[-160px] lg:mt-[-100px]">
       <img
         src={image}
