@@ -36,7 +36,7 @@ export default function Project({ project }: Props) {
         >
           <img
             className={`object-cover transition duration-1000 w-[250px] h-[240px] border-2 p-1 py-3 
-            ${isMouseOver && "opacity-40"} rounded-md`}
+            ${isMouseOver && "opacity-40"} rounded-md ${project.id === 703 && 'object-contain'}`}
             src={project.image}
             alt={project.name}
           />
