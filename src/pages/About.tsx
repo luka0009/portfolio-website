@@ -1,41 +1,11 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { skills } from "../data/skills";
 import image from "../assets/webdev1.png";
 import { motion } from "framer-motion";
 
 const About = () => {
   const [hover, setHover] = useState(false);
-  const [allImagesLoaded, setAllImagesLoaded] = useState(false);
 
-  const checkAllImagesLoaded = () => {
-    const images = document.getElementsByTagName("img");
-    for (let i = 0; i < images.length; i++) {
-      if (!images[i].complete) {
-        return false;
-      }
-    }
-    return true;
-  };
-
-  useEffect(() => {
-    setAllImagesLoaded(checkAllImagesLoaded());
-  }, []);
-
-  useEffect(() => {
-    const handleLoad = () => {
-      setAllImagesLoaded(checkAllImagesLoaded());
-    };
-
-    window.addEventListener("load", handleLoad);
-
-    return () => {
-      window.removeEventListener("load", handleLoad);
-    };
-  }, []);
-
-  if (!allImagesLoaded) {
-    return <div>Loading...</div>; // Replace with your loading screen component
-  }
   return (
     <div
       className="bg-[#1F0A3A]
