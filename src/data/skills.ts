@@ -64,6 +64,11 @@ export const skills = [
         name: "Vue.js",
     },
     {
+        id: 109,
+        image: 'https://user-images.githubusercontent.com/6919381/149651295-0bf814f5-ad07-4d40-9af2-78dd99d8e1e7.png',
+        name: "Pinia",
+    },
+    {
         id: 8,
         image: tailwind,
         name: "tailwind",
