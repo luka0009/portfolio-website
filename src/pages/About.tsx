@@ -1,43 +1,74 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { skills } from "../data/skills";
 import image from "../assets/webdev1.png";
 import { motion } from "framer-motion";
 
 const About = () => {
   const [hover, setHover] = useState(false);
+  const [allImagesLoaded, setAllImagesLoaded] = useState(false);
 
+  const checkAllImagesLoaded = () => {
+    const images = document.getElementsByTagName("img");
+    for (let i = 0; i < images.length; i++) {
+      if (!images[i].complete) {
+        return false;
+      }
+    }
+    return true;
+  };
+
+  useEffect(() => {
+    setAllImagesLoaded(checkAllImagesLoaded());
+  }, []);
+
+  useEffect(() => {
+    const handleLoad = () => {
+      setAllImagesLoaded(checkAllImagesLoaded());
+    };
+
+    window.addEventListener("load", handleLoad);
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
+  }, []);
+
+  if (!allImagesLoaded) {
+    return <div>Loading...</div>; // Replace with your loading screen component
+  }
   return (
-    <div className="bg-[#1F0A3A]
+    <div
+      className="bg-[#1F0A3A]
     bg-gradient-to-r from-[#1F0A3A] via-black to-[#1F0A3A] 
-    pb-8 w-full min-h-screen h-fit text-white p-2">
+    pb-8 w-full min-h-screen h-fit text-white p-2"
+    >
       <span className="mx-3 mt-2 text-base md:text-xl lg:text-4xl">
         About Me
       </span>
       <div className="flex flex-col">
         <div className="flex items-center justify-center">
-            <motion.div
-              style={{ y: -500 }}
-              animate={{ y: 0 }}
-              transition={{ duration: 1.2 }}
-              className="p-3 text-xs md:text-md lg:text-lg"
-            >
-              <p>
-                I am passionate Frontend/Full Stack Web developer with
-                a desire to learn and grow in a collaborative team environment.
-                I am Skilled in various programming languages and technologies,
-                mostly in Javascript language, especially in react and its
-                ecosystem.
-              </p>
-              <br />
-              <p>
-                As a web developer, I have had the opportunity to develop and
-                architect solutions for web projects using modern JavaScript
-                frameworks while adhering to industry best practices and
-                standards. I have experience in both frontend architecture and
-                development of client web applications and websites, as well as
-                full-stack applications using the MERN stack and NextJS.
-              </p>
-            </motion.div>
+          <motion.div
+            style={{ y: -500 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 1.2 }}
+            className="p-3 text-xs md:text-md lg:text-lg"
+          >
+            <p>
+              I am passionate Frontend/Full Stack Web developer with a desire to
+              learn and grow in a collaborative team environment. I am Skilled
+              in various programming languages and technologies, mostly in
+              Javascript language, especially in react and its ecosystem.
+            </p>
+            <br />
+            <p>
+              As a web developer, I have had the opportunity to develop and
+              architect solutions for web projects using modern JavaScript
+              frameworks while adhering to industry best practices and
+              standards. I have experience in both frontend architecture and
+              development of client web applications and websites, as well as
+              full-stack applications using the MERN stack and NextJS.
+            </p>
+          </motion.div>
           <motion.img
             style={{ x: 500 }}
             animate={{ x: 0 }}
