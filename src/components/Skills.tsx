@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import html from "../assets/skills/html.png";
 import css from "../assets/skills/css.png";
