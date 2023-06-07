@@ -39,6 +39,7 @@ export default function Project({ project }: Props) {
             ${isMouseOver && "opacity-40"} rounded-md ${project.id === 703 && 'object-contain'}`}
             src={project.image}
             alt={project.name}
+            loading="lazy"
           />
           {isMouseOver && (
             <span className="text-center underline w-full contrast-150 px-4 py-1 cursor-pointer absolute bg-slate-800 text-cyan-500 top-0">
