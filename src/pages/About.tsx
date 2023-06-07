@@ -62,9 +62,11 @@ const About = () => {
               style={{ x: 500 }}
               animate={{ x: 0 }}
               transition={{ duration: 1.2 }}
-              src={image}
+              src={
+                "https://www.pngmart.com/files/22/Web-Designing-Transparent-PNG.png"
+              }
               alt="Picture of the author"
-              className="hidden md:block md:w-[320px] md:h-[320px] lg:w-[500px] lg:h-[350px]"
+              className="hidden md:block md:w-[320px] md:h-[320px] lg:w-[500px] lg:h-[350px] mr-5 scale-90  brightness-90"
               loading="lazy"
             />
           </div>
