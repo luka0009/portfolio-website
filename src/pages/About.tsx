@@ -94,6 +94,7 @@ const About = () => {
                     alt={skill.name}
                     className="w-6 h-6 md:w-12 md:h-12 relative"
                     loading="lazy"
+                    decoding="async"
                   />
                   <span className="absolute top-[-25px] width-[100px] transition duration-500 text-[10px] md:text-base">
                     {hover && skill.name}
