@@ -79,9 +79,9 @@ const About = () => {
             </div>
             {windowSize.width < 1024 ? (
               <motion.div
-                // style={{ y: 500 }}
-                // animate={{ y: 0 }}
-                // transition={{ duration: 1.2 }}
+                style={{ y: 500 }}
+                animate={{ y: 0 }}
+                transition={{ duration: 1.2 }}
                 className="flex flex-col items-center justify-center"
               >
                 <h1 className="mt-6 text-lg md:text-2xl lg:text-4xl mb-5">
