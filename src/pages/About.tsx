@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { skills } from "../data/skills";
 import image from "../assets/webdev1.png";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const About = () => {
   const [hover, setHover] = useState(false);
