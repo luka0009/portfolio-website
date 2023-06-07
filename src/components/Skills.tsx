@@ -48,7 +48,7 @@ const Skills = () => {
         }}
       >
         <motion.div className="flex justify-center items-center rounded-full font-semibold bg-black text-white p-2 px-4">
-          Web
+          Software Development
         </motion.div>
         <Skill name="HTML" image={html} x="-5vw" y="-13vw" />
         <Skill name="CSS" image={css} x="-20vw" y="2vw" />

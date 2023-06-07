@@ -43,7 +43,7 @@ const About = () => {
                 // style={{ y: -500 }}
                 // animate={{ y: 0 }}
                 // transition={{ duration: 1.2 }}
-                className="p-3 text-xs md:text-md lg:text-lg"
+                className="p-3 text-xs md:text-md lg:text-xl lg:mt-[-40px]"
               >
                 <p>
                   I am passionate Frontend/Full Stack Web developer with a
