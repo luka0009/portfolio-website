@@ -1,13 +1,13 @@
-import books from "../assets/projects/books.png";
+// import books from "../assets/projects/books.png";
 import carlist from "../assets/projects/carlist.png";
 import chat from "../assets/projects/chat.png";
 import hotel from "../assets/projects/hotel.png";
 import shopping_cart from "../assets/projects/shopping_cart.png";
-import gallery from "../assets/projects/gallery.png";
-import rtk from "../assets/projects/rtk.png";
+// import gallery from "../assets/projects/gallery.png";
+// import rtk from "../assets/projects/rtk.png";
 import fitness from "../assets/projects/fitness.png";
 import finances from "../assets/projects/finances.png";
-import chat1 from "../assets/projects/chat1.png";
+// import chat1 from "../assets/projects/chat1.png";
 
 export const isNotDeployed = "Not Yet Deployed";
 
