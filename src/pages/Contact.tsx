@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import gmail from "../assets/gmail.png";
 import { motion } from "framer-motion";
+import Transition from "../components/Transition";
 
 export default function Contact() {
   const content = "lukabarbakadze18@gmail.com";
@@ -53,15 +54,17 @@ export default function Contact() {
   };
 
   return (
+    <>
+    <Transition />
     <div className=" text-white py-3
      bg-[#1F0A3A] 
      bg-gradient-to-r from-[#1F0A3A] via-black to-[#1F0A3A]
      min-h-[92vh]">
       <h1 className="text-center text-blue-500 text-[44px]">Contact Info</h1>
       <motion.div
-        initial={{ opacity: 1 }}
-        animate={isAnimating ? { opacity: 0 } : { opacity: 1 }} // Conditionally set animate property based on isAnimating state
-        transition={{ duration: 0.45 }}
+        // initial={{ opacity: 1 }}
+        // animate={isAnimating ? { opacity: 0 } : { opacity: 1 }} // Conditionally set animate property based on isAnimating state
+        // transition={{ duration: 0.45 }}
         className="mx-12 ml-14 md:mx-auto h-[350px] w-[40vw] flex flex-col items-center justify-center"
       >
         <div className="image z-1 bg-[#1A0B2E] text-blue-600 relative mx-auto p-24 border-2 border-blue-600 h-[250px] w-[270px] md:w-[350px] lg:w-[470px] flex items-center justify-center">
@@ -112,5 +115,6 @@ export default function Contact() {
         </div>
       </motion.div>
     </div>
+    </>
   );
 }

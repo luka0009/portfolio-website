@@ -1,79 +1,83 @@
-import { useState } from "react";
-import { skills } from "../data/skills";
+// import { useState } from "react";
+// import { skills } from "../data/skills";
 // import image from "../assets/webdev1.png";
 import { motion } from "framer-motion";
+import TransitionEffect from "../components/TransitionEffect";
+import Skills from "../components/Skills";
 
 const About = () => {
-  const [hover, setHover] = useState(false);
+  // const [hover, setHover] = useState(false);
 
   return (
-    // <AnimatePresence mode="wait">
-    <motion.div
-    // initial={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
-    // animate={{ clipPath: "polygon(0 0, 0% 100%, 100% 100%, 100% 0)" }}
-    // exit={{ clipPath: "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)" }}
-    // transition={{
-    //   duration: 0.75,
-    //   ease: "easeInOut",
-    // }}
-    // initial={{ clipPath: "polygon(59% 41%, 100% 0, 0 100%, 46% 54%, 100% 0, 0 100%)" }}
-    // animate={{ clipPath: "polygon(0 0, 100% 0, 0 100%, 100% 100%, 100% 0, 0 100%)" }}
-    // exit={{ clipPath: "polygon(0 0, 100% 0, 0 100%, 100% 100%, 100% 0, 0 100%)" }}
-    // transition={{
-    //   duration: 1,
-    //   ease: "easeInOut",
-    // }}
-    // className="base-page-size"
-    >
-      <div
-        className="bg-[#1F0A3A]
-    bg-gradient-to-r from-[#1F0A3A] via-black to-[#1F0A3A] 
-    pb-8 w-full min-h-screen h-fit text-white p-2"
+    <>
+      <TransitionEffect />
+      {/* <AnimatePresence mode="wait"> */}
+      <motion.div
+      // initial={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
+      // animate={{ clipPath: "polygon(0 0, 0% 100%, 100% 100%, 100% 0)" }}
+      // exit={{ clipPath: "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)" }}
+      // transition={{
+      //   duration: 0.75,
+      //   ease: "easeInOut",
+      // }}
+      // initial={{ clipPath: "polygon(59% 41%, 100% 0, 0 100%, 46% 54%, 100% 0, 0 100%)" }}
+      // animate={{ clipPath: "polygon(0 0, 100% 0, 0 100%, 100% 100%, 100% 0, 0 100%)" }}
+      // exit={{ clipPath: "polygon(0 0, 100% 0, 0 100%, 100% 100%, 100% 0, 0 100%)" }}
+      // transition={{
+      //   duration: 1,
+      //   ease: "easeInOut",
+      // }}
+      // className="base-page-size"
       >
-        <span className="mx-3 mt-2 text-base md:text-xl lg:text-4xl">
-          About Me
-        </span>
-        <div className="flex flex-col">
-          <div className="flex items-center justify-center">
-            <motion.div
-              style={{ y: -500 }}
-              animate={{ y: 0 }}
-              transition={{ duration: 1.2 }}
-              className="p-3 text-xs md:text-md lg:text-lg"
-            >
-              <p>
-                I am passionate Frontend/Full Stack Web developer with a desire
-                to learn and grow in a collaborative team environment. I am
-                Skilled in various programming languages and technologies,
-                mostly in Javascript language, especially in react and its
-                ecosystem.
-              </p>
-              <br />
-              <p>
-                As a web developer, I have had the opportunity to develop and
-                architect solutions for web projects using modern JavaScript
-                frameworks while adhering to industry best practices and
-                standards. I have experience in both frontend architecture and
-                development of client web applications and websites, as well as
-                full-stack applications using the MERN stack and NextJS.
-              </p>
-            </motion.div>
-            <motion.img
-              style={{ x: 500 }}
-              animate={{ x: 0 }}
-              transition={{ duration: 1.2 }}
-              src={
-                "https://www.pngmart.com/files/22/Web-Designing-Transparent-PNG.png"
-              }
-              alt="Picture of the author"
-              className="hidden md:block md:w-[320px] md:h-[320px] lg:w-[500px] lg:h-[350px] mr-5 scale-90  brightness-90"
-              loading="lazy"
-            />
-          </div>
-          <motion.div
-            style={{ y: 500 }}
-            animate={{ y: 0 }}
-            transition={{ duration: 1.2 }}
+        <div
+          className="
+    bg-[#1F0A3A] 
+    pb-8 w-full min-h-screen h-fit text-white p-2"
+        >
+          <span className="mx-3 mt-2 text-base md:text-xl lg:text-4xl">
+            About Me
+          </span>
+          <div className="flex flex-col">
+            <div className="flex items-center justify-center">
+              <motion.div
+                // style={{ y: -500 }}
+                // animate={{ y: 0 }}
+                // transition={{ duration: 1.2 }}
+                className="p-3 text-xs md:text-md lg:text-lg"
+              >
+                <p>
+                  I am passionate Frontend/Full Stack Web developer with a
+                  desire to learn and grow in a collaborative team environment.
+                  I am Skilled in various programming languages and
+                  technologies, mostly in Javascript language, especially in
+                  react and its ecosystem.
+                </p>
+                <br />
+                <p>
+                  As a web developer, I have had the opportunity to develop and
+                  architect solutions for web projects using modern JavaScript
+                  frameworks while adhering to industry best practices and
+                  standards. I have experience in both frontend architecture and
+                  development of client web applications and websites, as well
+                  as full-stack applications using the MERN stack and NextJS.
+                </p>
+              </motion.div>
+              <motion.img
+                style={{ x: 500 }}
+                animate={{ x: 0 }}
+                transition={{ duration: 1.2 }}
+                src={
+                  "https://www.pngmart.com/files/22/Web-Designing-Transparent-PNG.png"
+                }
+                alt="Picture of the author"
+                className="hidden md:block md:w-[320px] md:h-[320px] lg:w-[500px] lg:h-[350px] mr-5 scale-90  brightness-90"
+                loading="lazy"
+              />
+            </div>
+            {/* <motion.div
+            // style={{ y: 500 }}
+            // animate={{ y: 0 }}
+            // transition={{ duration: 1.2 }}
             className="flex flex-col items-center justify-center"
           >
             <h1 className="mt-6 text-lg md:text-2xl lg:text-4xl mb-5">
@@ -104,11 +108,13 @@ const About = () => {
                 </div>
               ))}
             </div>
-          </motion.div>
+          </motion.div> */}
+            <Skills />
+          </div>
         </div>
-      </div>
-    </motion.div>
-    // </AnimatePresence>
+      </motion.div>
+      {/* </AnimatePresence> */}
+    </>
   );
 };
 
