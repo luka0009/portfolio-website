@@ -50,7 +50,7 @@ const About = () => {
               >
                 <p>
                   I am passionate Frontend/Full Stack Web developer with a
-                  desire to learn and grow in a collaborative team environment.
+                  desire to work and grow in a collaborative team environment.
                   I am Skilled in various programming languages and
                   technologies, mostly in Javascript language, especially in
                   react and its ecosystem.
