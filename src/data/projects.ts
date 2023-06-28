@@ -17,11 +17,22 @@ export const projects = [
     image: chat,
     name: "Chat App",
     description:
-      "Full stack Chat applications created with: Next.js (version 13), Next-auth, Pusher, Tailwind css, Typescript, Prisma, MongoDb, Cloudinary. It has all the feauteres, authentication, live messaging, updadting profile, deleting conversations and etc.",
+      "Full stack Chat application created with: Next.js (version 13), Next-auth, Pusher, Tailwind css, Typescript, Prisma, MongoDb, Cloudinary. It has all the feauteres, authentication, live messaging, updadting profile, deleting conversations and etc.",
     stack:
       "Next.js-13, Next-auth, TS, Tailwind, Prisma, MongoDB, Pusher, CLoudinary",
     website: "https://next-js-13-chat-app.vercel.app/",
     code: "https://github.com/luka0009/Next.js-13-chat-app",
+  },
+  {
+    id: 904,
+    image: fitness,
+    name: "Fitness App",
+    description:
+      "Full stack Fitness application created with: Vue, Supabase and Tailwind css. It has all the feauteres, authentication, creating, updating and deleting workout plans and adding/updating/deleting exercise in the workout plan",
+    stack:
+      "Vue, Supabase, Tailwind Css",
+    website: "https://fitness-app-luka0009.vercel.app/",
+    code: "https://github.com/luka0009/vue-supabase",
   },
   {
     id: 6,
