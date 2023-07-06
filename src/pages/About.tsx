@@ -6,6 +6,7 @@ import TransitionEffect from "../components/TransitionEffect";
 import Skills from "../components/Skills";
 //@ts-expect-error use hooks types
 import { useWindowSize } from "@uidotdev/usehooks";
+import Transition from "../components/Transition";
 
 const About = () => {
 	const [hover, setHover] = useState(false);
@@ -13,7 +14,8 @@ const About = () => {
 
 	return (
 		<>
-			<TransitionEffect />
+			{/* <TransitionEffect /> */}
+			<Transition />
 			{/* <AnimatePresence mode="wait"> */}
 			<motion.div
 			// initial={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
@@ -78,7 +80,7 @@ const About = () => {
 								loading="lazy"
 							/>
 						</div>
-						{windowSize.width < 1024 ? (
+						{windowSize.width < 1020 ? (
 							<motion.div
 								style={{ y: 500 }}
 								animate={{ y: 0 }}
@@ -95,10 +97,10 @@ const About = () => {
 											onMouseEnter={() => setHover(true)}
 											onMouseLeave={() => setHover(false)}
 											className="
-            flex justify-center items-center rounded-full 
-            w-10 h-10 md:w-16 md:h-16 bg-[#1A0B2E] 
-            transition duration-1000 
-            hover:scale-125 cursor-pointer"
+											flex justify-center items-center rounded-full 
+											w-10 h-10 md:w-16 md:h-16 bg-[#1A0B2E] 
+											transition duration-1000 
+											hover:scale-125 cursor-pointer"
 										>
 											<img
 												src={skill.image}
