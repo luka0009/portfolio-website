@@ -1,6 +1,6 @@
 import { projects } from "../data/projects";
 import Project from "../components/Project";
-import TransitionEffect from "../components/TransitionEffect";
+// import TransitionEffect from "../components/TransitionEffect";
 import Transition from "../components/Transition";
 
 export default function Projects() {
