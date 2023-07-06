@@ -2,7 +2,6 @@ import { useState } from "react";
 import { skills } from "../data/skills";
 // import image from "../assets/webdev1.png";
 import { motion } from "framer-motion";
-import TransitionEffect from "../components/TransitionEffect";
 import Skills from "../components/Skills";
 //@ts-expect-error use hooks types
 import { useWindowSize } from "@uidotdev/usehooks";
