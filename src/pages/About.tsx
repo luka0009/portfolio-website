@@ -39,7 +39,7 @@ const About = () => {
     pb-8 w-full min-h-screen h-fit text-white p-2"
 				>
 					<span className="mx-3 mt-2 text-base md:text-xl lg:text-4xl">
-						About Me
+						About Me 
 					</span>
 					<div className="flex flex-col">
 						<div className="flex items-center justify-center">
@@ -49,22 +49,24 @@ const About = () => {
 								// transition={{ duration: 1.2 }}
 								className="p-3 text-xs md:text-md lg:text-xl lg:mt-[-40px]"
 							>
-								<p>
-									I am a Frontend/Full Stack Web developer with over 2 years of
-									programming experience. I'm Skilled in various programming
-									languages and technologies, mostly in Javascript language and
-									its frameworks, especially in React & Vue and their ecosystem
+								<p className="mt-4">
+									I am a Full Stack developer with over 2 years of programming
+									experience. I'm Skilled in various programming languages and
+									technologies, mostly in Javascript language and its
+									frameworks, especially in React, React Native, and Vue. These
+									frameworks, along with their ecosystem, are my expertise.
 								</p>
 								<br />
 								<p>
-									As a web developer, I have had the opportunity to develop and
-									architect solutions for various web projects, employing modern
-									JavaScript frameworks and adhering to industry best practices
-									and standards. My experience spans both frontend architecture
-									and development of client web applications and websites.
-									Additionally, I have worked on full-stack applications using
-									technologies such as Node.js with Express or full stack
-									frameworks like Next.js or Nuxt.js.
+									Throughout my career, I've had the opportunity to work on
+									diverse projects, where I've showcased my skills in developing
+									and designing solutions. I have a deep understanding of modern
+									JavaScript frameworks and always follow industry best
+									practices and standards. My expertise extends to both frontend
+									architecture and client-side application & web development as
+									well as full-stack applications using technologies such as
+									Node.js with Express.js or full stack frameworks like Next.js or
+									Nuxt.js.
 								</p>
 							</motion.div>
 							<motion.img
