@@ -2,6 +2,7 @@ import { projects } from "../data/projects";
 import Project from "../components/Project";
 // import TransitionEffect from "../components/TransitionEffect";
 import Transition from "../components/Transition";
+import { BsFillArrowDownSquareFill } from "react-icons/bs";
 
 export default function Projects() {
 	return (
@@ -28,6 +29,10 @@ export default function Projects() {
 							return <Project key={project.id} project={project} />;
 						}
 					})}
+					<div className="text-[40px] text-white flex items-center justify-center gap-5 animate-bounce">
+						<BsFillArrowDownSquareFill />
+						Sroll down for more
+					</div>
 				</div>
 				<div className="mt-[-40px] md:mt-[-40px] lg:mt-[-40px] header-container">
 					<span className="text-[27px] md:text-[48px] text-white">
