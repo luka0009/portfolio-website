@@ -13,6 +13,17 @@ export const isNotDeployed = "Not Yet Deployed";
 
 export const projects = [
 	{
+		id: 1561,
+		image: 'https://code-racer-eight.vercel.app/static/logo.png',
+		name: "Code Racer",
+		description: "Welcome to Code Racer, a community project built with Next.js, Tailwind CSS, and TypeScript. Code Racer is a multiplayer coding game where developers can compete against each other to solve programming challenges in real-time. Sharpen your coding skills, challenge your peers, and have fun while racing against the clock!. Please see project's Readme file on Github for more",
+		stack:
+			"Next.js, Tailwind, ShadcnUI, TS, Prisma, Docker, Postgress",
+		website: "https://code-racer-eight.vercel.app/",
+		code: "https://github.com/webdevcody/code-racer",
+		openSource: true
+	},
+	{
 		id: 703,
 		image: chat,
 		name: "Chat App",

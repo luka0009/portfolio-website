@@ -97,6 +97,12 @@ const Skills = () => {
 					x="-14vw"
 					y="16vw"
 				/>
+				<Skill
+					name="Docker"
+					image="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png"
+					x="12vw"
+					y="-22vw"
+				/>
 			</div>
 		</>
 	);
