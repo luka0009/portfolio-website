@@ -14,21 +14,41 @@ export const isNotDeployed = "Not Yet Deployed";
 export const projects = [
 	{
 		id: 1561,
-		image: 'https://code-racer-eight.vercel.app/static/logo.png',
+		image: "https://code-racer-eight.vercel.app/static/logo.png",
 		name: "Code Racer",
-		description: "Welcome to Code Racer, a community project built with Next.js, Tailwind CSS, and TypeScript. Code Racer is a multiplayer coding game where developers can compete against each other to solve programming challenges in real-time. Sharpen your coding skills, challenge your peers, and have fun while racing against the clock!. Please see project's Readme file on Github for more",
-		stack:
-			"Next.js, Tailwind, ShadcnUI, TS, Prisma, Docker, Postgress",
+		description:
+			"Welcome to Code Racer, a community project built with Next.js, Tailwind CSS, and TypeScript. Code Racer is a multiplayer coding game where developers can compete against each other to solve programming challenges in real-time. Sharpen your coding skills, challenge your peers, and have fun while racing against the clock!. Please see project's Readme file on Github for more",
+		stack: "Next.js, Tailwind, ShadcnUI, TS, Prisma, Docker, Postgress",
 		website: "https://code-racer-eight.vercel.app/",
 		code: "https://github.com/webdevcody/code-racer",
-		openSource: true
+		openSource: true,
 	},
 	{
 		id: 703,
+		image: 'https://www.theedigital.com/wp-content/uploads/2015/01/reasons-to-use-a-content-management-system.png',
+		name: "E-Commerce CMS for Admin",
+		description:
+			"Full stack application created with: Next.js, Typescript, Clerk(for auth), Tailwind/ShadcnUI, Prisma, Planetscale, Cloudinary and etc. It has all the feauteres of content management system: authentication, CRUD, etc...",
+		stack:
+			"Next.js, Clerk, TS, Tailwind, ShadcnUI, Prisma, Planetscal, CLoudinary",
+		website: "https://cms-dashboard-eight.vercel.app/",
+		code: "https://github.com/luka0009/eccomerce-cms-admin-dashboard",
+	},
+	{
+		id: 719,
+		image: shopping_cart,
+		name: "E-Commerce front-end",
+		description: "Simple eccomerce store using CMS above.",
+		stack: "Next.js, TS, Tailwind, zustand",
+		website: "https://eccomerce-store-alpha.vercel.app/",
+		code: "https://github.com/luka0009/eccomerce-store",
+	},
+	{
+		id: 720,
 		image: chat,
 		name: "Chat App",
 		description:
-			"Full stack Chat application created with: Next.js (version 13), Next-auth, Pusher, Tailwind css, Typescript, Prisma, MongoDb, Cloudinary. It has all the feauteres, authentication, live messaging, updadting profile, deleting conversations and etc.",
+			"Full stack Chat application created with: Next.js, Next-auth, Pusher, Tailwind css, Typescript, Prisma, MongoDb, Cloudinary. It has all the feauteres, authentication, live messaging, updadting profile, deleting conversations and etc.",
 		stack:
 			"Next.js-13, Next-auth, TS, Tailwind, Prisma, MongoDB, Pusher, CLoudinary",
 		website: "https://next-js-13-chat-app.vercel.app/",
@@ -36,7 +56,8 @@ export const projects = [
 	},
 	{
 		id: 904,
-		image: shopping_cart,
+		image:
+			"https://cdn.logojoy.com/wp-content/uploads/2018/05/30164225/572.png",
 		name: "Blog Posts Website",
 		description:
 			"Full Stack Blog App with MERN, TypeScript, Redux Toolkit, Tailwind, React Query and lots of other technologies. authenticated users can create posts with Tiptap, users can also update their profile, including their profile pics, or update posts/post cover pictures",

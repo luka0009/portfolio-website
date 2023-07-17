@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { useClickAway } from "react-use";
+import { useClickAway, useWindowSize } from "react-use";
 import { motion } from "framer-motion";
 
 interface Props {
@@ -9,6 +9,8 @@ interface Props {
 export default function Project({ project }: Props) {
 	const [isMouseOver, setIsMouseOver] = useState(false);
 	const [isClicked, setIsClicked] = useState(false);
+	const windowSize = useWindowSize();
+
 
 	const ref = useRef(null);
 	useClickAway(ref, () => {
@@ -28,9 +30,17 @@ export default function Project({ project }: Props) {
 			transition={{ delay: 0.8, duration: 1 }}
 		>
 			<div className="text-[24px] text-white flex flex-col justify-start items-center md:gap-3">
-				<span className="font-semibold md:mb-6 text-xl md:text-2xl lg:text-3xl">
-					{project.name}
-				</span>
+				<div className="relative md:mb-6">
+					<span className="font-semibold md:mb-6 text-xl md:text-2xl lg:text-3xl">
+						{project.name}
+					</span>
+					{(project.id === 703 && windowSize.width > 1180) && (
+						<>
+						<div className={`hidden lg:block h-1 bg-white w-[340px] absolute top-[200px] left-[320px] ${windowSize.width > 1380 && `left-[403px]`}`} />
+						<span className={`hidden lg:block text-white absolute top-[159px] left-[640px] text-[50px] ${windowSize.width > 1380 && `left-[721px]`}`}> {`>`} </span>
+						</>
+					)}
+				</div>
 				<div
 					className="relative cursor-pointer scale-[0.8] my-[-10px] md:mb-1 md:scale-100 flex flex-col justify-start items-center w-[250px] h-[240px]"
 					onMouseOver={() => setIsMouseOver(true)}
