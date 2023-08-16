@@ -100,7 +100,13 @@ const Skills = () => {
 				<Skill
 					name="Docker"
 					image="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png"
-					x="12vw"
+					x="16vw"
+					y="-22vw"
+				/>
+				<Skill
+					name="Nuxt.js"
+					image="https://nuxt.com/assets/design-kit/logo/icon-green.png"
+					x="-18vw"
 					y="-22vw"
 				/>
 			</div>

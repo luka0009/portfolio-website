@@ -18,7 +18,7 @@ export default function Projects() {
 				<div className="mt-[-40px] md:mt-[-40px] lg:mt-[-20px] header-container">
 					<span className="text-[27px] md:text-[48px] text-white">
 						<br />
-						Open-Source Projects I am part of/contributed to:
+						Open-Source Projects I am part of:
 					</span>
 					{/* <p className='text-rose-600 text-[33px] mt-5'>Warning: MERN apps will take about a minute to load</p> */}
 				</div>

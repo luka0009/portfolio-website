@@ -24,8 +24,30 @@ export const projects = [
 		openSource: true,
 	},
 	{
+		id: 704,
+		image: "https://nuxt.com/assets/design-kit/logo/icon-green.png",
+		name: "Nuxt 3 auth",
+		description:
+			"Nuxt 3 Authentication with MongoDB, Refresh Access Tokens, Email Verification & Password Reset Functionality",
+		stack: "Nuxt 3, Typescript, Pinia, Formkit, Tailwind, MongoDB",
+		website: "https://nuxt-js-auth.vercel.app/",
+		code: "https://github.com/luka0009/NuxtJS-Auth",
+	},
+	{
+		id: 720,
+		image: chat,
+		name: "Chat App",
+		description:
+			"Full stack Chat application created with: Next.js, Next-auth, Pusher, Tailwind css, Typescript, Prisma, MongoDb, Cloudinary. It has all the feauteres, authentication, live messaging, updadting profile, deleting conversations and etc.",
+		stack:
+			"Next.js-13, Next-auth, TS, Tailwind, Prisma, MongoDB, Pusher, CLoudinary",
+		website: "https://next-js-13-chat-app.vercel.app/",
+		code: "https://github.com/luka0009/Next.js-13-chat-app",
+	},
+	{
 		id: 703,
-		image: 'https://www.theedigital.com/wp-content/uploads/2015/01/reasons-to-use-a-content-management-system.png',
+		image:
+			"https://www.theedigital.com/wp-content/uploads/2015/01/reasons-to-use-a-content-management-system.png",
 		name: "E-Commerce CMS for Admin",
 		description:
 			"Full stack application created with: Next.js, Typescript, Clerk(for auth), Tailwind/ShadcnUI, Prisma, Planetscale, Cloudinary and etc. It has all the feauteres of content management system: authentication, CRUD, etc...",
