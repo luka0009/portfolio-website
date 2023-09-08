@@ -29,7 +29,7 @@ export const projects = [
 		name: "Nuxt 3 auth",
 		description:
 			"Nuxt 3 Authentication with MongoDB, Refresh Access Tokens, Email Verification & Password Reset Functionality",
-		stack: "Nuxt 3, Typescript, Pinia, Formkit, Tailwind, MongoDB",
+		stack: "Nuxt 3, Typescript, Pinia, Formkit, Tailwind, MongoDB, Elastic Email API",
 		website: "https://nuxt-js-auth.vercel.app/",
 		code: "https://github.com/luka0009/NuxtJS-Auth",
 	},
