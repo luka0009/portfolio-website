@@ -16,6 +16,7 @@ import express from "../assets/skills/express.png";
 import mongodb from "../assets/skills/mongodb.png";
 import MySQL from "../assets/skills/MySQL.png";
 import firebase from "../assets/skills/firebase.png";
+import nuxt from '../assets/nuxt-icon.png';
 
 const Skill = ({ name, x, y, image, className }: any) => {
 	return (
@@ -105,7 +106,7 @@ const Skills = () => {
 				/>
 				<Skill
 					name="Nuxt.js"
-					image="https://nuxt.com/assets/design-kit/logo/icon-green.png"
+					image={nuxt}
 					x="-18vw"
 					y="-22vw"
 				/>

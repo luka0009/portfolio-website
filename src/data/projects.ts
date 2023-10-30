@@ -8,6 +8,7 @@ import shopping_cart from "../assets/projects/shopping_cart.png";
 import fitness from "../assets/projects/fitness.png";
 import finances from "../assets/projects/finances.png";
 // import chat1 from "../assets/projects/chat1.png";
+import nuxt from '../assets/nuxt-icon.png';
 
 export const isNotDeployed = "Not Yet Deployed";
 
@@ -25,7 +26,7 @@ export const projects = [
 	},
 	{
 		id: 704,
-		image: "https://nuxt.com/assets/design-kit/logo/icon-green.png",
+		image: nuxt,
 		name: "Nuxt 3 auth",
 		description:
 			"Nuxt 3 Authentication with MongoDB, Refresh Access Tokens, Email Verification & Password Reset Functionality",
@@ -47,7 +48,7 @@ export const projects = [
 	{
 		id: 703,
 		image:
-			"https://www.theedigital.com/wp-content/uploads/2015/01/reasons-to-use-a-content-management-system.png",
+			"https://www.shutterstock.com/image-vector/cms-content-management-system-administration-260nw-1437165989.jpg",
 		name: "E-Commerce CMS for Admin",
 		description:
 			"Full stack application created with: Next.js, Typescript, Clerk(for auth), Tailwind/ShadcnUI, Prisma, Planetscale, Cloudinary and etc. It has all the feauteres of content management system: authentication, CRUD, etc...",

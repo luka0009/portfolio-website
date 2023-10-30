@@ -85,7 +85,7 @@ export default function Project({ project }: Props) {
 					{isClicked && (
 						<div
 							ref={ref}
-							className="text-left text-xs md:text-base lg:text-lg absolute flex flex-col justify-start w-[340px] md:w-[450px] h-fit max-h-[480px] overflow-y-auto z-99 bg-slate-800 text-cyan-500 p-5"
+							className="text-left text-base lg:text-lg absolute flex flex-col justify-start w-[340px] md:w-[450px] h-fit max-h-[480px] overflow-y-auto z-99 bg-slate-800 text-cyan-500 p-5"
 						>
 							<button
 								onClick={() => {
